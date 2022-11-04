@@ -9,6 +9,7 @@
   --border-color: #eeeeee;
   --border-header-color: #ececec;
   --footer-address-color: rgba(255, 255, 255, 0.6);
+  --icons-color: #afb1b8;
   --primary-font-size: 14px;
   --secondary-font-size: 16px;
   --projects-list-gap: 30px;
@@ -148,6 +149,20 @@ button {
   color: var(--accent-color);
 }
 
+.contacts-nav .link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacts-mail {
+  fill: currentColor;
+}
+
+.contacts-phone {
+  fill: currentColor;
+}
+
 /* hero section */
 
 .hero {
@@ -215,12 +230,22 @@ button {
   margin-left: var(--projects-list-gap);
 }
 
+.features-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--light-color);
+}
+
 .features-subtitle {
   color: var(--secondary-color);
   font-weight: 700;
   font-size: var(--primary-font-size);
   line-height: 1.1;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 .features-descr {
@@ -257,7 +282,7 @@ button {
 .team-item {
   flex-basis: calc(100% / var(--features-items) - var(--projects-list-gap));
   margin-left: var(--projects-list-gap);
-  background: #ffffff;
+  background: var(--thirdy-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -281,6 +306,35 @@ button {
   line-height: 1.2;
   text-align: center;
   margin-top: 10px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--thirdy-color);
+  color: var(--icons-color);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-color);
+  color: var(--thirdy-color);
 }
 
 /* footer  */
